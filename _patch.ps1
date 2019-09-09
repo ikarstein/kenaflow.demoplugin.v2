@@ -11,7 +11,7 @@ Get-ChildItem $p -Recurse -File | ? { $_.FullName -notlike "*.snk" -and $_.FullN
     $r = [system.io.file]::ReadAllLines($_.FullName)
 
     $r = $r | % {
-        return ($_.replace("C:\kenaflow", "$pathToKenaflow").replace("c:\kenaflow", "$pathToKenaflow").replace("c:\workflows\plugin","$p\_ready_workflow"))
+        return ($_.replace("C:\kenaflow", "$pathToKenaflow").replace("c:\kenaflow", "$pathToKenaflow").replace("c:\workflows\plugin","$p\_ready_workflow").replace("c:\source\plugin", "$p"))
     }
 
     [system.io.file]::WriteAllLines($_.FullName, $r)
