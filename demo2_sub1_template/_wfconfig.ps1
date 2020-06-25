@@ -1,6 +1,6 @@
 @{
     Version = "3.0";
-    Ignore = $true; 
+    Enabled = $false; 
     Type = "DEMO2";
 	SubType = "SUB1";
     Name = "<<wfname>>"; 

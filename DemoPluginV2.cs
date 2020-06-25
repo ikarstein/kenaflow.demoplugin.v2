@@ -18,6 +18,7 @@ namespace kenaflow.demoplugin.v2
             Name = "Demo Plugin v2",
             Version = new Version("1.0.0.0"),
             MinKenaflowVersion = new Version("3.0.12.0"),
+            MaxKenaflowVersion = new Version("3.0.9999.0"),
             PSModule = true,
             CustomWorkflowType = "DEMO2::SUB1",
             LogDebug = true,
